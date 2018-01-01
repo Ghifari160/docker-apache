@@ -1,4 +1,4 @@
-FROM ubuntu:zesty
+FROM ghifari160/ubuntu:17.04
 
 MAINTAINER Ghifari160 <ghifari160@ghifari160.com>
 
