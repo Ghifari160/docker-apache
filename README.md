@@ -53,8 +53,8 @@ docker run -d -p 8080:80
 ```
 
 ## Tags ##
-| Tags                      | Ubuntu Version | Size |
-|---------------------------|----------------|------|
+| Tags                      | Ubuntu Version | Size              |
+|---------------------------|----------------|-------------------|
 | `latest` `16.04` `xenial` | 16.04          | [![](https://images.microbadger.com/badges/image/ghifari160/apache.svg)](https://microbadger.com/images/ghifari160/apache "Get your own image badge on microbadger.com") |
-| `17.04` `zesty`           | 17.04          | [![](https://images.microbadger.com/badges/image/ghifari160/apache:17.04.svg)](https://microbadger.com/images/ghifari160/apache:17.04 "Get your own image badge on microbadger.com") |
+| `17.04` `zesty`           | 17.04          | **NOT SUPPORTED** |
 | `17.10` `artful`          | 17.10          | [![](https://images.microbadger.com/badges/image/ghifari160/apache:17.10.svg)](https://microbadger.com/images/ghifari160/apache:17.10 "Get your own image badge on microbadger.com") |
