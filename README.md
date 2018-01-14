@@ -22,11 +22,11 @@ App Engine (i.e. it will output every connection to stdio).
 ## Installation ##
 By default, this image should be run as a daemon.
 ```
-docker run -d -p 8080:80
+docker run -d -p 8080:80 ghifari160/apache
 ```
 However, this image may be run in the foreground for debug purposes.
 ```
-docker run -it -p 8080:80
+docker run -it -p 8080:80 ghifari160/apache
 ```
 
 ### Further Configurations ###
@@ -34,14 +34,14 @@ docker run -it -p 8080:80
 Add this parameter: `--name <name>`  
 Example:
 ```
-docker run --name apache -d -p 8080:80
+docker run --name apache -d -p 8080:80 ghifari160/apache
 ```
 
 #### Run your code from a folder on the host computer ####
 Add this parameter `-v /path/on/the/host/computer:/var/www/html`  
 Example:
 ```
-docker run -d -p 8080:80 -v /d/workspace/project:/var/www/html
+docker run -d -p 8080:80 -v /d/workspace/project:/var/www/html ghifari160/apache
 ```
 
 #### Change the port on your container ####
@@ -49,7 +49,7 @@ Use this parameter `-p <port on the host>:80` to map the container's port to
 another port on the host computer.  
 Example:
 ```
-docker run -d -p 8080:80
+docker run -d -p 8080:80 ghifari160/apache
 ```
 
 ## Tags ##
