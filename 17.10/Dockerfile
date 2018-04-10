@@ -16,4 +16,7 @@ EXPOSE 80
 RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log && \
     ln -sf /proc/self/fd/1 /var/log/apache2/error.log
 
+# Fix user permissions
+RUN usermod -u 1000 www-data && usermod -G staff www-data
+
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
