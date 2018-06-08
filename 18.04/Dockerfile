@@ -1,4 +1,4 @@
-FROM ghifari160/ubuntu:17.10
+FROM ghifari160/ubuntu:18.04
 
 MAINTAINER Ghifari160 <ghifari160@ghifari160.com>
 

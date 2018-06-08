@@ -52,9 +52,22 @@ Example:
 docker run -d -p 8080:80 ghifari160/apache
 ```
 
+#### macOS permission fixes
+On macOS, shared volumes remains owned by the host user and group. Permissions
+on these shared volumes are also determined by the host, unchangeable from
+guest. On the home directory, the default owner and permission are
+`<user>:staff` and `755`. Apache needs write access to its files and
+directories. A workaround is to set the `www-data` UID and GID to `1000` and
+`50`. The init script will do this if the value of `G16_MACOS` is `yes`. Use
+the parameter `-e G16_MACOS=yes` to enable this workaround. Example:
+```
+docker run -d -e G16_MACOS=yes ghifari160/apache
+```
+
 ## Tags ##
 | Tags                      | Ubuntu Version | Size              |
 |---------------------------|----------------|-------------------|
-| `latest` `16.04` `xenial` | 16.04          | [![](https://images.microbadger.com/badges/image/ghifari160/apache.svg)](https://microbadger.com/images/ghifari160/apache "Get your own image badge on microbadger.com") |
+| `16.04` `xenial`          | 16.04          | [![](https://images.microbadger.com/badges/image/ghifari160/apache:16.04.svg)](https://microbadger.com/images/ghifari160/apache:16.04 "Get your own image badge on microbadger.com")|
 | `17.04` `zesty`           | 17.04          | **NOT SUPPORTED** |
-| `17.10` `artful`          | 17.10          | [![](https://images.microbadger.com/badges/image/ghifari160/apache:17.10.svg)](https://microbadger.com/images/ghifari160/apache:17.10 "Get your own image badge on microbadger.com") |
+| `17.10` `artful`          | 17.10          | [![](https://images.microbadger.com/badges/image/ghifari160/apache:17.10.svg)](https://microbadger.com/images/ghifari160/apache:17.10 "Get your own image badge on microbadger.com")|
+| `latest` `18.04` `bionic` | 18.04          |[![](https://images.microbadger.com/badges/image/ghifari160/apache.svg)](https://microbadger.com/images/ghifari160/apache "Get your own image badge on microbadger.com")|
