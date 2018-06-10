@@ -32,7 +32,7 @@ fi
 echo "=============================="
 echo "=      Staring Apache2       ="
 echo "=============================="
-/usr/sbin/apachectl -D FOREGROUND
+exec /usr/sbin/apachectl -D FOREGROUND
 echo "=============================="
 echo "=        Ready to Use!       ="
 echo "=============================="
