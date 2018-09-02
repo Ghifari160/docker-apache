@@ -71,3 +71,4 @@ docker run -d -e G16_MACOS=yes ghifari160/apache
 | `17.04` `zesty`           | 17.04          | **NOT SUPPORTED** |
 | `17.10` `artful`          | 17.10          | **NOT SUPPORTED** |
 | `latest` `18.04` `bionic` | 18.04          |[![](https://images.microbadger.com/badges/image/ghifari160/apache.svg)](https://microbadger.com/images/ghifari160/apache "Get your own image badge on microbadger.com")|
+| `devel` `18.10` `cosmic`  | 18.10          |![](https://images.microbadger.com/badges/image/ghifari160/apache:18.10.svg)](https://microbadger.com/images/ghifari160/apache:18.10 "Get your own image badge on microbadger.com")|
